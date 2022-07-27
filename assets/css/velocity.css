@@ -1,0 +1,166 @@
+body{
+    font-family: sans-serif;
+    margin: 2px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    min-height: 80px;
+    background-color: #fafafa;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+.logo img{
+    height: 50px;
+    margin-left: 10px;
+}
+
+nav a{
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+nav a:hover{
+    color: aqua;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+    padding: 10px;
+    background-image: url("/assets/images/atlona-velocity-hero-bkg.jpg");
+    object-fit: cover;
+}
+
+.banner h2, .banner p{
+    text-decoration: none;
+    color: #fff;
+}
+
+.textBanner{
+    margin-left: 120px;
+}
+
+.textBanner img {
+    height: 100px;
+}
+
+.imageBanner img{
+    height: 350px;
+    margin-right: 120px;
+}
+
+.textVideo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 100px;
+    margin-left: 50px;
+    gap: 120px;
+}
+
+.textBanner video{
+    margin-left: 200px;
+    width: 400px;
+    justify-content: center;
+}
+
+.procesadorContainer{
+    display: flex;
+    background-color: #f5f5f5;
+}
+
+.procesadorContainer h2{
+    padding-top: 50px;
+    margin-left: 100px;
+}
+
+.procesadorGrid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    background-color: #f5f5f5;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.procesadorGrid .procesadorCard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.procesadorGrid .procesadorCard img {
+    width: 100%;
+}
+
+.conexiones_banner{
+    position: relative;
+    min-height: auto;
+    background: #fafafa;
+    padding: 20px;
+}
+
+.conexiones_banner h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.conexiones-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.conexiones-container .conexiones{
+    width: 250px;
+    align-items: center;
+    border: 5px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.7);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.conexiones-container .conexiones img{
+    height: 40%;
+    width: 40%;
+    object-fit: contain;
+    transition: .2s linear;
+}
+
+.conexiones_banner h2{
+    color: orangered;
+    padding: 10px;
+}
+
+.products_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #f5f5f5;
+    padding: 100px;
+}
+.products_container .productsCard{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.products_container .productsCard img {
+    width: 100%;
+}
