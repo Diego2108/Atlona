@@ -37,9 +37,10 @@ nav a:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 40px;
     background-image: url("/assets/images/atlona-velocity-hero-bkg.jpg");
-    object-fit: contain;
+    background-size: cover;
+    object-fit: cover;
 }
 
 .banner h2, .banner p{
@@ -56,7 +57,7 @@ nav a:hover{
 }
 
 .imageBanner img{
-    height: 350px;
+    height: 300px;
     margin-right: 120px;
 }
 
@@ -80,7 +81,7 @@ nav a:hover{
 }
 
 .procesadorContainer{
-    display: inline;
+    display: grid;
     background-color: #f5f5f5;
 }
 
@@ -89,9 +90,10 @@ nav a:hover{
 }
 
 .procesadorContainer hr {
-    height: 5px;
+    height: 3px;
     width: 100px;
     margin-left: 9%;
+    margin-top: 30px;
     background-color: orangered;
 }
 
@@ -101,6 +103,7 @@ nav a:hover{
     background-color: #f5f5f5;
     padding-right: 100px;
     padding-left: 100px;
+    padding-bottom: 30px;
 }
 
 .procesadorGrid p {
@@ -132,7 +135,7 @@ nav a:hover{
 .conexiones_banner{
     position: relative;
     min-height: auto;
-    background: #fafafa;
+    background: #fff;
     padding: 20px;
 }
 
@@ -144,7 +147,7 @@ nav a:hover{
 .conexiones-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    background-color: #f5f5f5;
+    background-color: #fff;
     padding: 100px;
 }
 
@@ -153,7 +156,7 @@ nav a:hover{
     flex-wrap: wrap;
     gap: 25px;
     justify-content: center;
-    padding: 20px;
+    padding: 10px;
     align-items: center;
     border-radius: 5px;
     overflow: hidden;
@@ -176,8 +179,10 @@ nav a:hover{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: #f5f5f5;
+    padding-top: 100px;
     padding-left: 100px;
     padding-right: 100px;
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
 }
 .products_container .productsCard{
     display: inline;
