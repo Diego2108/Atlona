@@ -30,7 +30,7 @@ nav a{
 }
 
 nav a:hover{
-    color: aqua;
+    color: #FA6E00;
 }
 
 .banner{
@@ -82,7 +82,7 @@ nav a:hover{
 
 .procesadorContainer{
     display: grid;
-    background-color: #f5f5f5;
+    background-color: #D9D9D6;
 }
 
 .procesadorContainer h2{
@@ -94,13 +94,13 @@ nav a:hover{
     width: 100px;
     margin-left: 9%;
     margin-top: 30px;
-    background-color: orangered;
+    background-color: #FA6E00;
 }
 
 .procesadorGrid {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    background-color: #f5f5f5;
+    background-color: #D9D9D6;
     padding-right: 100px;
     padding-left: 100px;
     padding-bottom: 30px;
@@ -129,7 +129,7 @@ nav a:hover{
 }
 
 .procesadorCard h4 {
-    color: blue;
+    color: #0085AD;
 }
 
 .conexiones_banner{
@@ -178,7 +178,7 @@ nav a:hover{
 .products_container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    background-color: #f5f5f5;
+    background-color: #D9D9D6;
     padding-top: 100px;
     padding-left: 100px;
     padding-right: 100px;
@@ -198,13 +198,13 @@ nav a:hover{
 }
 
 .productsCard h4 {
-    color: blue;
+    color: #0085AD;
 }
 
 .form_container {
     display: grid; 
     grid-template-columns: 1fr 2fr;
-    background-color: blue;
+    background-color: #253746;
     flex-wrap: wrap;
     align-items: center;
     padding-left: 100px;
@@ -264,29 +264,52 @@ nav a:hover{
     }
     .banner{
         flex-direction: column;
+        padding: 5%;
     }
     
     .imageBanner img{
-        padding: 10px 5px;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
     }
 
     .textVideo {
+        justify-content: center;
         grid-template-columns: 1fr;
         grid-template-rows: max-content;
+        padding:5%;
+        margin-left: 0%;
+
     }
 
     .procesadorGrid{
         grid-template-columns: 1fr;
         grid-template-rows: max-content;
         text-align: center;
+        padding: 10%;
+        margin-left: 0%;
     }
 
     .conexiones-container{
         display: grid;
         grid-template-columns: 1fr;
+        padding: 10%;
     }
 
     .products_container {
         grid-template-columns: 1fr;
+        clip-path: polygon(0 0, 100% 0.5%, 100% 100%, 0% 100%);
+        padding: 10%;
+
+    }
+
+    .form_container {
+        grid-template-columns: 1fr;
+        padding: 5%;
+    }
+
+    .certificacion_container{
+        grid-template-columns: 1fr;
+        padding: 5%;
     }
 }
