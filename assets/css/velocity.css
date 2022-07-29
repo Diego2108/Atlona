@@ -37,10 +37,9 @@ nav a:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: blue;
-    padding: 10px;
+    padding: 20px;
     background-image: url("/assets/images/atlona-velocity-hero-bkg.jpg");
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .banner h2, .banner p{
@@ -69,6 +68,11 @@ nav a:hover{
     gap: 120px;
 }
 
+.textVideo img {
+    width: 100%;
+    object-fit: contain;
+}
+
 .textBanner video{
     margin-left: 200px;
     width: 400px;
@@ -76,13 +80,19 @@ nav a:hover{
 }
 
 .procesadorContainer{
-    display: flex;
+    display: inline;
     background-color: #f5f5f5;
 }
 
 .procesadorContainer h2{
-    padding-top: 50px;
     margin-left: 100px;
+}
+
+.procesadorContainer hr {
+    height: 5px;
+    width: 100px;
+    margin-left: 9%;
+    background-color: orangered;
 }
 
 .procesadorGrid {
@@ -110,8 +120,13 @@ nav a:hover{
     width: 100%;
     object-fit: contain;
 }
+
 .procesadorGrid .procesadorCard p {
     margin-top: 0px;
+}
+
+.procesadorCard h4 {
+    color: blue;
 }
 
 .conexiones_banner{
@@ -136,12 +151,10 @@ nav a:hover{
 .conexiones-container .conexiones{
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 25px;
     justify-content: center;
     padding: 20px;
     align-items: center;
-    border: 5px solid #fff;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.7);
     border-radius: 5px;
     overflow: hidden;
 }
@@ -154,7 +167,6 @@ nav a:hover{
     margin-top: -10px;
 }
 
-
 .conexiones_banner h2{
     color: orangered;
     padding: 10px;
@@ -164,7 +176,8 @@ nav a:hover{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     background-color: #f5f5f5;
-    padding: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 .products_container .productsCard{
     display: inline;
@@ -179,9 +192,62 @@ nav a:hover{
     object-fit: contain;
 }
 
-.products_container .procesadorCard h4 {
-    margin-top: 100px;
+.productsCard h4 {
     color: blue;
+}
+
+.form_container {
+    display: grid; 
+    grid-template-columns: 1fr 2fr;
+    background-color: blue;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+}
+
+.form_container h2 {
+    color: #fafafa;
+}
+
+.form_container p {
+    color: #fafafa;
+}
+
+.form_container hr {
+    width: 100px;
+    height: 3px;
+    background-color: #f5f5f5;
+    margin-left: 0%;
+}
+
+.form_container .tex_forms{
+    display: inline;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.certificacion_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.certificacion_container .certificacionCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.certificacionCard img {
+    width: 75%;
+    object-fit: contain;
+}
+.certificacionCard p{
+    font-size: 14px;
 }
 
 @media (max-width:800px){
