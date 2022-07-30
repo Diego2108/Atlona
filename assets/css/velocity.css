@@ -34,7 +34,8 @@ nav a:hover{
 }
 
 .banner{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
@@ -48,7 +49,12 @@ nav a:hover{
 }
 
 .textBanner{
-    margin-left: 120px;
+    display: inline;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 0px;
+    margin-left: 100px;
 }
 
 .textBanner img {
@@ -56,8 +62,13 @@ nav a:hover{
 }
 
 .imageBanner img{
-    height: 300px;
-    margin-right: 120px;
+    display: inline;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+    width: 60%;
+    margin-left: 15%;
 }
 
 .textVideo {
@@ -270,6 +281,13 @@ nav a:hover{
         padding: 10px;
         align-items: center;
         justify-content: center;
+        margin-left: 20%;
+    }
+
+    .banner {
+        grid-template-columns: 1fr;
+        align-items: center;
+        grid-template-rows: max-content;
     }
 
     .textVideo {
@@ -279,6 +297,21 @@ nav a:hover{
         padding:5%;
         margin-left: 0%;
 
+    }
+
+    .textVideo img {
+        margin-top: -60px;
+        margin-bottom: 50px;
+    }
+
+    .procesadorContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content;
+        text-align: center;
+    }
+
+    .procesadorContainer h2 {
+        margin-left: 0%;
     }
 
     .procesadorGrid{
