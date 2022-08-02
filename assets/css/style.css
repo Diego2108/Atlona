@@ -34,11 +34,11 @@ nav a:hover{
 }
 
 .banner{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-between;
     align-items: center;
-    background-color: blue;
-    padding: 40px;
+    padding: 20px;
     background-image: url("/assets/images/atlona-velocity-hero-bkg.jpg");
     background-size: cover;
 }
@@ -49,12 +49,26 @@ nav a:hover{
 }
 
 .textBanner{
+    display: inline;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 0px;
     margin-left: 100px;
 }
 
+.textBanner img {
+    height: 100px;
+}
+
 .imageBanner img{
-    height: 200px;
-    margin-right: 100px;
+    display: inline;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+    width: 60%;
+    margin-left: 15%;
 }
 
 .products_banner{
@@ -63,9 +77,17 @@ nav a:hover{
     background: #fff;
 }
 
+.products_banner hr {
+    margin-left: 100px;
+    width: 100px;
+    height: 3px;
+    margin-top: 50px;
+    background-color: #FA6E00;
+}
+
 .products_banner h2 {
     margin-left: 100px;
-    margin-top: 100px;
+    margin-top: 20px;
     margin-bottom: 50px;
 }
 
@@ -74,28 +96,15 @@ nav a:hover{
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     margin: 100px;
-    /*display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-    padding: 10px;*/
 }
 
 .products-container .product{
-    /*height: 250px;
-    width: 350px;
-    border: 5px solid #fff;
-    border-radius: 5px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.7);
-    cursor: pointer;
-    overflow: hidden;*/
     justify-content: center;
     display: flex;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 10px;
     padding: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.7);
 }
 
 .products-container .product .text_products {
@@ -125,10 +134,10 @@ nav a:hover{
 .conexiones-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 40px;
-    margin-right: 200px;
-    margin-left: 200px;
-    margin-bottom: 100px;
+    gap: 20px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 50px;
 }
 
 .conexiones-container .conexiones{
@@ -155,20 +164,31 @@ nav a:hover{
 }
 
 .audio_banner{
-    position: relative;
+    position: grid;
     min-height: 100vh;
-    background: gray;
+    background: #D9D9D6;
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
+    padding-top: 50px;
 }
 
 .audio_banner h2 {
     margin-left: 100px;
-    padding-top: 100px;
+    padding-top: 5px;
+    color: #FA6E00;
+}
+
+.audio_banner hr {
+    margin-left: 100px;
+    height: 3px;
+    background-color: #0085AD;
+    width: 100px;
 }
 
 .audio-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 100px;
+    margin-top: -80px;
 }
 
 .audio-container .audio{
@@ -180,9 +200,13 @@ nav a:hover{
 }
 
 .audio-container .audio img{
-    width: 70%;
+    width: 75%;
     object-fit: contain;
     transition: .2s linear;
+}
+
+.audio-container .audio h2{
+    color: #0085AD;
 }
 
 @media (max-width:800px){
@@ -193,24 +217,40 @@ nav a:hover{
         padding: 10px 5px;
     }
     .banner{
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        padding: 5%;
+        align-items: center;
+        grid-template-rows: max-content;
+        justify-content: center;
+        background-size: cover;
     }
     
     .imageBanner img{
-        padding: 10px 5px;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10%;
     }
 
     .conexiones-container{
+        justify-content: center;
         grid-template-columns: 1fr;
-        margin: 5px;
+        grid-template-rows: max-content;
+        padding:5%;
+        margin-left: 0%;
     }
 
     .products-container {
+        justify-content: center;
         grid-template-columns: 1fr;
+        grid-template-rows: max-content;
+        margin-left: 0%;
     }
 
     .audio-container {
-        margin: 5px;
+        justify-content: center;
         grid-template-columns: 1fr;
+        grid-template-rows: max-content;
+        margin-left: 0%;
     }
 }
