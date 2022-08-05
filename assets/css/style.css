@@ -95,7 +95,10 @@ nav a:hover{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    margin: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 .products-container .product{
@@ -115,7 +118,12 @@ nav a:hover{
 }
 
 .products-container .product img{
-    width: 50%;
+    width: 35%;
+    object-fit: contain;
+}
+
+.products-container .product img:hover{
+    width: 40%;
     object-fit: contain;
 }
 
@@ -188,7 +196,7 @@ nav a:hover{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 100px;
-    margin-top: -80px;
+    margin-top: -20px;
 }
 
 .audio-container .audio{
@@ -200,12 +208,26 @@ nav a:hover{
 }
 
 .audio-container .audio img{
-    width: 75%;
+    width: 70%;
     object-fit: contain;
     transition: .2s linear;
+    margin-top: 5px;
 }
 
-.audio-container .audio h2{
+.audio-container .audio .bocina{
+    width: 45%;
+    object-fit: contain;
+    transition: .2s linear;
+    margin-left: 15%;
+}
+
+.audio-container .audio h3{
+    color: #0085AD;
+    margin-bottom: 0px;
+}
+
+.audio-container .audio h4{
+    margin-top: 0px;
     color: #0085AD;
 }
 
@@ -259,7 +281,11 @@ nav a:hover{
     }
 
     .products-container .product img{
-        width: 50%;
+        width: 35%;
+    }
+
+    .products-container .product img:hover{
+        width: 40%;
     }
 
     .products-container .product .text_products img{
