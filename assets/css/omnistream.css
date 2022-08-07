@@ -41,11 +41,19 @@ nav a:hover{
     padding: 20px;
     background-image: url("/assets/images/atlona-velocity-hero-bkg.jpg");
     background-size: cover;
+    min-height: 300px;
 }
 
 .banner h2, .banner p{
     text-decoration: none;
     color: #fff;
+}
+
+.banner hr {
+    background-color: #fff;
+    width: 100px;
+    margin-left: 0%;
+    height: 3px;
 }
 
 .textBanner{
@@ -59,35 +67,65 @@ nav a:hover{
 
 .textBanner img {
     height: 100px;
+    margin-bottom: 50px;
 }
 
-.imageBanner img{
+.imageBanner {
     display: inline;
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
     padding: 10px;
     width: 70%;
-    margin-left: 15%;
+    margin-left: 10%;
 }
 
-.textVideo {
+.secondBanner {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 100px;
-    margin-left: 50px;
-    gap: 120px;
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 10px;
 }
 
-.textVideo img {
+.textBanner-second{
+    display: inline;
+}
+
+.Video-secondBanner{
+    display: inline;
+}
+
+.Video-secondBanner img{
+    display: inline;
     width: 100%;
     object-fit: contain;
 }
 
-.textBanner video{
-    margin-left: 200px;
-    width: 400px;
-    justify-content: center;
+.columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.firstColumn {
+    display: inline;
+}
+
+.secondColumn {
+    display: inline;
+}
+
+.firstColumn img {
+    width: 50%;
+    padding: 20px;
+}
+
+.secondColumn img{
+    width: 50%;
+    padding: 20px;
 }
 
 .procesadorContainer{
